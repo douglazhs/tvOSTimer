@@ -16,6 +16,7 @@
 		504232AC282ADA3F008289F5 /* HourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504232AB282ADA3F008289F5 /* HourView.swift */; };
 		504232B0282ADD56008289F5 /* TimezoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504232AF282ADD56008289F5 /* TimezoneView.swift */; };
 		504232B2282ADD65008289F5 /* TimezoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504232B1282ADD65008289F5 /* TimezoneViewModel.swift */; };
+		5092E965282C523100A820F0 /* HourViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5092E964282C523100A820F0 /* HourViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		504232AB282ADA3F008289F5 /* HourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourView.swift; sourceTree = "<group>"; };
 		504232AF282ADD56008289F5 /* TimezoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneView.swift; sourceTree = "<group>"; };
 		504232B1282ADD65008289F5 /* TimezoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneViewModel.swift; sourceTree = "<group>"; };
+		5092E964282C523100A820F0 /* HourViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				504232AB282ADA3F008289F5 /* HourView.swift */,
+				5092E964282C523100A820F0 /* HourViewModel.swift */,
 			);
 			path = Hour;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5092E965282C523100A820F0 /* HourViewModel.swift in Sources */,
 				504232A8282AD951008289F5 /* TimerViewModel.swift in Sources */,
 				504232B2282ADD65008289F5 /* TimezoneViewModel.swift in Sources */,
 				504232B0282ADD56008289F5 /* TimezoneView.swift in Sources */,

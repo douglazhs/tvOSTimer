@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct TimezoneView: View {
+    @StateObject var viewModel = TimezoneViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            TextField("Place", text: $viewModel.place)
+                .keyboardType(.default)
+            
+            Spacer()
+        }
     }
 }
 

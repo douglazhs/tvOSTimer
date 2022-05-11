@@ -8,10 +8,24 @@
 import SwiftUI
 
 struct HourView: View {
+    @StateObject var viewModel = HourViewModel()
+    @State var stopped: Bool = false
+    @State var text: String = ""
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    @FocusState private var isFocused: Bool
+    
     var body: some View {
+        
         VStack{
-            Text("11:12:20")
+            
+            Text(viewModel.currentTime)
                 .font(.title)
+                .onReceive(timer) { _ in
+                    viewModel.getCurrentrime()
+                }
+        }
+        .onAppear {
+            viewModel.getCurrentrime()
         }
     }
 }
