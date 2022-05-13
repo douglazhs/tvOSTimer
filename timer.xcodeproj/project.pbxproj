@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50354CB7282C945200843313 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50354CB6282C945200843313 /* API.swift */; };
+		50354CB9282C97EC00843313 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50354CB8282C97EC00843313 /* Place.swift */; };
 		50423295282AD7E7008289F5 /* timerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50423294282AD7E7008289F5 /* timerApp.swift */; };
 		50423297282AD7E7008289F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50423296282AD7E7008289F5 /* ContentView.swift */; };
 		50423299282AD7E9008289F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50423298282AD7E9008289F5 /* Assets.xcassets */; };
@@ -17,9 +19,22 @@
 		504232B0282ADD56008289F5 /* TimezoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504232AF282ADD56008289F5 /* TimezoneView.swift */; };
 		504232B2282ADD65008289F5 /* TimezoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504232B1282ADD65008289F5 /* TimezoneViewModel.swift */; };
 		5092E965282C523100A820F0 /* HourViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5092E964282C523100A820F0 /* HourViewModel.swift */; };
+		50AA9CE5282DA5FD00992419 /* timerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AA9CE4282DA5FD00992419 /* timerTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		50AA9CE6282DA5FD00992419 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50423289282AD7E7008289F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50423290282AD7E7008289F5;
+			remoteInfo = timer;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		50354CB6282C945200843313 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		50354CB8282C97EC00843313 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		50423291282AD7E7008289F5 /* timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50423294282AD7E7008289F5 /* timerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerApp.swift; sourceTree = "<group>"; };
 		50423296282AD7E7008289F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,10 +46,19 @@
 		504232AF282ADD56008289F5 /* TimezoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneView.swift; sourceTree = "<group>"; };
 		504232B1282ADD65008289F5 /* TimezoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneViewModel.swift; sourceTree = "<group>"; };
 		5092E964282C523100A820F0 /* HourViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourViewModel.swift; sourceTree = "<group>"; };
+		50AA9CE2282DA5FD00992419 /* timerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50AA9CE4282DA5FD00992419 /* timerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5042328E282AD7E7008289F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AA9CDF282DA5FD00992419 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				50423293282AD7E7008289F5 /* timer */,
+				50AA9CE3282DA5FD00992419 /* timerTests */,
 				50423292282AD7E7008289F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				50423291282AD7E7008289F5 /* timer.app */,
+				50AA9CE2282DA5FD00992419 /* timerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +146,8 @@
 		504232AD282ADCFE008289F5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				50354CB6282C945200843313 /* API.swift */,
+				50354CB8282C97EC00843313 /* Place.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,6 +159,14 @@
 				504232B1282ADD65008289F5 /* TimezoneViewModel.swift */,
 			);
 			path = Timezone;
+			sourceTree = "<group>";
+		};
+		50AA9CE3282DA5FD00992419 /* timerTests */ = {
+			isa = PBXGroup;
+			children = (
+				50AA9CE4282DA5FD00992419 /* timerTests.swift */,
+			);
+			path = timerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +189,24 @@
 			productReference = 50423291282AD7E7008289F5 /* timer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		50AA9CE1282DA5FD00992419 /* timerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50AA9CEA282DA5FD00992419 /* Build configuration list for PBXNativeTarget "timerTests" */;
+			buildPhases = (
+				50AA9CDE282DA5FD00992419 /* Sources */,
+				50AA9CDF282DA5FD00992419 /* Frameworks */,
+				50AA9CE0282DA5FD00992419 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50AA9CE7282DA5FD00992419 /* PBXTargetDependency */,
+			);
+			name = timerTests;
+			productName = timerTests;
+			productReference = 50AA9CE2282DA5FD00992419 /* timerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +219,10 @@
 				TargetAttributes = {
 					50423290282AD7E7008289F5 = {
 						CreatedOnToolsVersion = 13.3.1;
+					};
+					50AA9CE1282DA5FD00992419 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 50423290282AD7E7008289F5;
 					};
 				};
 			};
@@ -182,6 +240,7 @@
 			projectRoot = "";
 			targets = (
 				50423290282AD7E7008289F5 /* timer */,
+				50AA9CE1282DA5FD00992419 /* timerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +252,13 @@
 			files = (
 				5042329C282AD7E9008289F5 /* Preview Assets.xcassets in Resources */,
 				50423299282AD7E9008289F5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AA9CE0282DA5FD00992419 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,11 +276,29 @@
 				504232A6282AD945008289F5 /* TimerView.swift in Sources */,
 				50423297282AD7E7008289F5 /* ContentView.swift in Sources */,
 				50423295282AD7E7008289F5 /* timerApp.swift in Sources */,
+				50354CB7282C945200843313 /* API.swift in Sources */,
 				504232AC282ADA3F008289F5 /* HourView.swift in Sources */,
+				50354CB9282C97EC00843313 /* Place.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AA9CDE282DA5FD00992419 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50AA9CE5282DA5FD00992419 /* timerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50AA9CE7282DA5FD00992419 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50423290282AD7E7008289F5 /* timer */;
+			targetProxy = 50AA9CE6282DA5FD00992419 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5042329D282AD7E9008289F5 /* Debug */ = {
@@ -383,6 +467,42 @@
 			};
 			name = Release;
 		};
+		50AA9CE8282DA5FD00992419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22298649MR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tvOS.timer.timerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/timer.app/timer";
+			};
+			name = Debug;
+		};
+		50AA9CE9282DA5FD00992419 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22298649MR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tvOS.timer.timerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/timer.app/timer";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -400,6 +520,15 @@
 			buildConfigurations = (
 				504232A0282AD7E9008289F5 /* Debug */,
 				504232A1282AD7E9008289F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50AA9CEA282DA5FD00992419 /* Build configuration list for PBXNativeTarget "timerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50AA9CE8282DA5FD00992419 /* Debug */,
+				50AA9CE9282DA5FD00992419 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
