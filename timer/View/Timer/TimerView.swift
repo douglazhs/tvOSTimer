@@ -31,7 +31,6 @@ struct TimerView: View {
     @State var stopped: Bool = false
     @State var text: String = ""
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    @FocusState private var isFocused: Bool
     
     var body: some View {
         VStack{
@@ -42,14 +41,13 @@ struct TimerView: View {
             HStack{
                 ButtonBuilder.createButton(stopped: $stopped, title:  stopped ? .stop : .start, viewModel: viewModel)
                     .tint(.blue)
-                    .buttonStyle(.borderedProminent)
-                    .buttonBorderShape(.roundedRectangle)
-                
+                    .background(Color.cyan)
+                    .clipShape(Capsule())
+                    
                 ButtonBuilder.createButton(stopped: $stopped, title: .reset, viewModel: viewModel)
                     .tint(.red)
-                    .foregroundColor(.red)
-                    .buttonStyle(.borderedProminent)
-                    .buttonBorderShape(.roundedRectangle)
+                    .background(Color.red)
+                    .clipShape(Capsule())
             }
         }
     }

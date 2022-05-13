@@ -12,7 +12,6 @@ struct HourView: View {
     @State var stopped: Bool = false
     @State var text: String = ""
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    @FocusState private var isFocused: Bool
     
     var body: some View {
         

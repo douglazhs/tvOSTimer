@@ -51,7 +51,7 @@ struct TimezoneView: View {
                         .fill(.white)
                         .frame(width: 0.5, height: 30)
                     
-                    Text("\(Int(viewModel.timezone?.data.rawUtcOffsetHours ?? 0))")
+                    Text("GMT \(Int(viewModel.timezone?.data.rawUtcOffsetHours ?? 0))")
                         .font(.title3)
                 }
             }
