@@ -2,7 +2,7 @@
 
 ## About
 
-This app was developed in order to study the features that ```diff @@ purple @@ Apple TV``` offers us as developers and to study more about the apple ecosystem.
+This app was developed in order to study the features that ```diff @@ purple @@``` Apple TV offers us as developers and to study more about the apple ecosystem.
 
 ## An tvOS app that offers you:
 
