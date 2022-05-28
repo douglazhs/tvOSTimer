@@ -2,7 +2,9 @@
 
 ## About
 
-This app was developed in order to study the features that Apple TV offers us as developers and to study more about the apple ecosystem.
+- This app was developed in order to study the features that Apple TV offers us as developers and to study more about the apple ecosystem.
+- It was all developed in SwiftUI.
+- The architecture used was MVVM.
 
 ## An tvOS app that offers you:
 
